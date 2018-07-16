@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/admin\view\bis\apply.html";i:1531723845;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\header.html";i:1531310130;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\footer.html";i:1530541141;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/admin\view\bis\index.html";i:1531724484;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\header.html";i:1531310130;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\footer.html";i:1530541141;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -31,7 +31,7 @@
 <meta name="description" content="o2o平台">
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 商户入驻申请 </nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 商户入驻申请审批数据 </nav>
 <div class="page-container">
 	
 	

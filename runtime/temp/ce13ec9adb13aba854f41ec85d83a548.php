@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/bis\view\index\index.html";i:1531315219;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\header.html";i:1531315041;s:70:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\menu.html";i:1531310130;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\footer.html";i:1531319933;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/bis\view\index\index.html";i:1531725841;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\header.html";i:1531379178;s:70:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\menu.html";i:1531726717;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\footer.html";i:1531319933;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,9 +10,9 @@
 <LINK rel="Bookmark" href="/favicon.ico" >
 <LINK rel="Shortcut Icon" href="/favicon.ico" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
-<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/html5.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/respond.min.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/PIE_IE678.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
@@ -40,7 +40,7 @@
 					<li class="dropDown dropDown_hover"><a href="#" class="dropDown_A"> <i class="Hui-iconfont">&#xe6d5;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
 							<!--<li><a href="#">个人信息</a></li>-->
-							<li><a href="">退出</a></li>
+							<li><a href="<?php echo url('login/logout'); ?>">退出</a></li>
 						</ul>
 					</li>
 					
@@ -68,7 +68,7 @@
 			<dt><i class="Hui-iconfont">&#xe616;</i> 门店管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-				    <li><a _href="" data-title="新增门店" href="javascript:void(0)">新增门店</a></li>
+				    <li><a _href="<?php echo url('location/add'); ?>" data-title="新增门店" href="javascript:void(0)">新增门店</a></li>
 					<li><a _href="" data-title="门店列表" href="javascript:void(0)">门店列表</a></li>
 				</ul>
 			</dd>

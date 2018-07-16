@@ -63,3 +63,22 @@ function pagination($obj){
     }
     return '<div class="cl pd-5 bg-1 bk-gray mt-20 tp5-o2o">'.$obj->render().'</div>';
 }
+
+
+//获取城市
+function getSeCityName($path){
+    if (empty($path)){
+        return '';
+    }
+    //判断是否有逗号
+    if (preg_match('/,/',$path)){
+        $cityPath = explode(',',$path);
+        $cityId = $cityPath[1];
+    }else{
+        $cityPath = $path;
+    }
+
+    $city = model('City')->get($cityId);
+    return $city->name;
+
+}

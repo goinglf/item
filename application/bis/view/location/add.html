@@ -17,7 +17,7 @@
 				<span class="select-box">
 				<select name="city_id" class="select cityId">
 					<option value="0">--请选择--</option>
-					{volist name="citys" id="vo"}
+					{volist name="cities" id="vo"}
 					<option value="{$vo.id}">{$vo.name}</option>
 					{/volist}
 				</select>
@@ -52,7 +52,7 @@
 			<div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
 				<select name="category_id" class="select categoryId">
 					<option value="0">--请选择--</option>
-					{volist name="categorys" id="vo"}
+					{volist name="categories" id="vo"}
 					<option value="{$vo.id}">{$vo.name}</option>
 					{/volist}
 				</select>

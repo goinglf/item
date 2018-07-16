@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/bis\view\login\index.html";i:1484384144;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\header.html";i:1484376710;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\footer.html";i:1484376736;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:80:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/bis\view\login\index.html";i:1531724818;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\header.html";i:1531379178;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\bis\view\public\footer.html";i:1531319933;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -11,9 +11,9 @@
 <LINK rel="Bookmark" href="/favicon.ico" >
 <LINK rel="Shortcut Icon" href="/favicon.ico" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
-<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/html5.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/respond.min.js"></script>
+<script type="text/javascript" src="/static/admin/hui/lib/PIE_IE678.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="/static/admin/hui/static/h-ui.admin/css/style.css" />
   <link rel="stylesheet" type="text/css" href="/static/admin/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="/static/admin/uploadify/uploadify.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -36,7 +37,7 @@
 
   <div id="loginform" class="loginBox">
 
-    <form class="form form-horizontal" action="" method="post">
+    <form class="form form-horizontal" action="" method="post" action="<?php echo url('bis/login'); ?>">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
@@ -57,7 +58,7 @@
 
           <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
           <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
-          <a href=""><input name="" type="" class="btn btn-success radius size-L" value="&nbsp;申请&nbsp;&nbsp;&nbsp;&nbsp;入驻&nbsp;"></a>
+          <a href="<?php echo url('register/index'); ?>"><input name="" type="" class="btn btn-success radius size-L" value="&nbsp;申请&nbsp;&nbsp;&nbsp;&nbsp;入驻&nbsp;"></a>
         </div>
       </div>
     </form>
@@ -74,3 +75,5 @@
 <script type="text/javascript" src="/static/admin/hui/static/h-ui/js/H-ui.js"></script> 
 <script type="text/javascript" src="/static/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript" src="/static/admin/js/common.js"></script>
+<script type="text/javascript" src="/static/admin/uploadify/jquery.uploadify.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/image.js"></script>

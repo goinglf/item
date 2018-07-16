@@ -9,13 +9,12 @@ namespace app\common\model;
 
 use think\Model;
 
-class BisAccount extends Model
+class BisAccount extends BaseModel
 {
-    public function add($data){
-        $data['status'] = 1;
-        $this->save($data);
-        //返回插入后的id
-        return $this->id;
+    public function updateById($data,$id){
+
+        //过滤data数组中的非数据字段的数据
+        return $this->allowField(true)->save($data,['id'=>$id]);
 
     }
 

@@ -15,6 +15,7 @@ class Bis extends BaseModel
         $data =[
           'status' => $status,
         ];
+
         $result = $this->where($data)->order($order)->paginate();
         return $result;
     }

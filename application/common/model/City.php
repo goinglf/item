@@ -23,4 +23,8 @@ class City extends Model
         return $result;
     }
 
+    public function getNormalCitys(){
+
+    }
+
 }

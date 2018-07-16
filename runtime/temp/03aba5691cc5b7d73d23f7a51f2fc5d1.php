@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/admin\view\index\index.html";i:1530541141;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\header.html";i:1531310130;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\menu.html";i:1531712292;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\footer.html";i:1530541141;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/admin\view\index\index.html";i:1530541141;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\header.html";i:1531310130;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\menu.html";i:1531723931;s:74:"F:\phpStudy\PHPTutorial\WWW\item\application\admin\view\public\footer.html";i:1530541141;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -84,8 +84,8 @@
 			<dt><i class="Hui-iconfont">&#xe613;</i> 商家管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('bis/apply'); ?>" data-title="商家列表" href="javascript:void(0)">商户列表</a></li>
-					<li><a _href="" data-title="商家入驻申请" href="javascript:void(0)">商家入驻申请</a></li>
+					<li><a _href="<?php echo url('bis/index'); ?>" data-title="商家列表" href="javascript:void(0)">商户列表</a></li>
+					<li><a _href="<?php echo url('bis/apply'); ?>" data-title="商家入驻申请" href="javascript:void(0)">商家入驻申请</a></li>
 					<li><a _href="" data-title="删除的商户" href="javascript:void(0)">删除的商户</a></li>
 				</ul>
 			</dd>

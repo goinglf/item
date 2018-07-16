@@ -27,6 +27,6 @@ class Bis extends Validate
 
     protected $scene = [
       'add' =>['name','email','logo','city_id','brank_info','brank_name','brank_user','faren',],
+        'status' => ['id','status'],//排序
     ];
-
 }
