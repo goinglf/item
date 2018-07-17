@@ -12,7 +12,7 @@ use think\Model;
 class BaseModel extends Model
 {
     protected  $autoWriteTimestamp = true;
-    public function add($data){
+    public function add($data = []){
         $data['status'] = 1;
         $this->save($data);
         //返回插入后的id
@@ -22,5 +22,6 @@ class BaseModel extends Model
     public function updateById($data, $id) {
         return $this->allowField(true)->save($data, ['id'=>$id]);
     }
+
 
 }

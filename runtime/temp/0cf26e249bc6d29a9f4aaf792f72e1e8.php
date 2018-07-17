@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/index\view\index\index.html";i:1530535173;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\index\view\public\head.html";i:1530534884;s:71:"F:\phpStudy\PHPTutorial\WWW\item\application\index\view\public\nav.html";i:1530534955;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"F:\phpStudy\PHPTutorial\WWW\item\public/../application/index\view\index\index.html";i:1530535173;s:72:"F:\phpStudy\PHPTutorial\WWW\item\application\index\view\public\head.html";i:1531809297;s:71:"F:\phpStudy\PHPTutorial\WWW\item\application\index\view\public\nav.html";i:1530534955;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,24 +25,9 @@
                 <div class="city-drop-down">
                     <h3>热门城市</h3>
                     <ul class="son">
-                        <li><a href="">北京</a></li>
-                        <li><a href="">上海</a></li>
-                        <li><a href="">广州</a></li>
-                        <li><a href="">深圳</a></li>
-                        <li><a href="">天津</a></li>
-                        <li><a href="">杭州</a></li>
-                        <li><a href="">西安</a></li>
-                        <li><a href="">成都</a></li>
-                        <li><a href="">郑州</a></li>
-                        <li><a href="">厦门</a></li>
-                        <li><a href="">青岛</a></li>
-                        <li><a href="">太原</a></li>
-                        <li><a href="">重庆</a></li>
-                        <li><a href="">武汉</a></li>
-                        <li><a href="">南京</a></li>
-                        <li><a href="">沈阳</a></li>
-                        <li><a href="">济南</a></li>
-                        <li><a href="">哈尔滨</a></li>
+                        <?php if(is_array($citys) || $citys instanceof \think\Collection || $citys instanceof \think\Paginator): $i = 0; $__LIST__ = $citys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <li><a href="<?php echo url('index/index',['city'=>$vo['name']]); ?>"><?php echo $vo['name']; ?></a></li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
                     </ul>
 
                 </div>
